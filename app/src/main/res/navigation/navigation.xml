@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/FRG_HOME">
+
+
+    <fragment
+        android:id="@+id/FRG_HOME"
+        android:name="com.marcr.appnavegationzeromarcrubio.FRG_HOME"
+        android:label="FRG_HOME" >
+        <action
+            android:id="@+id/action_FRG_HOME_to_FRG2"
+            app:destination="@id/FRG2" />
+    </fragment>
+    <fragment
+        android:id="@+id/FRG2"
+        android:name="com.marcr.appnavegationzeromarcrubio.FRG2"
+        android:label="FRG2" >
+        <action
+            android:id="@+id/action_FRG2_to_FRG3"
+            app:destination="@id/FRG3"
+            app:popUpTo="@id/FRG_HOME"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_FRG2_to_FRG4"
+            app:destination="@id/FRG4" />
+    </fragment>
+    <fragment
+        android:id="@+id/FRG3"
+        android:name="com.marcr.appnavegationzeromarcrubio.FRG3"
+        android:label="FRG3" >
+        <action
+            android:id="@+id/action_FRG3_to_FRG4"
+            app:destination="@id/FRG4" />
+    </fragment>
+    <fragment
+        android:id="@+id/FRG4"
+        android:name="com.marcr.appnavegationzeromarcrubio.FRG4"
+        android:label="FRG4" />
+</navigation>
